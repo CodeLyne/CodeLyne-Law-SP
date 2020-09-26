@@ -33,7 +33,7 @@ body {
   display: inline-block;
   width: 4rem;
   height: 0.4rem;
-  background-color: var(--primary-color);
+  background-color: var(--primary-color, orange);
 }
 
 .horizontal-line--margin {
@@ -58,7 +58,7 @@ body {
 }
 
 .header__bg-dark {
-  background-color: var(--secondary-color);
+  background-color: var(--secondary-color, maroon);
   width: 50%;
   height: 6rem;
   clip-path: polygon(5% 0, 100% 0%, 100% 100%, 0 100%);
@@ -92,12 +92,11 @@ body {
   font-weight: 600;
   font-size: 2.4rem;
   line-height: 2.8rem;
-  color: var(--primary-color);
+  color: var(--primary-color, orangered);
 }
 
 a.navbar__link {
-  color: var(--secondary-color);
-  font-family: Open Sans;
+  color: var(--secondary-color, maroon);
   font-style: normal;
   font-weight: 600;
   font-size: 1.6rem;
@@ -105,7 +104,7 @@ a.navbar__link {
 }
 
 a.nav-link.navbar__link.navbar__link--active {
-  color: var(--primary-color);
+  color: var(--primary-color, orangered);
 }
 
 .hero__bg-image {
@@ -148,7 +147,7 @@ a.nav-link.navbar__link.navbar__link--active {
   font-size: calc(1rem + 0.61vw);
   line-height: calc(1.6rem + 0.46vw);
   color: #fff;
-  background-color: var(--primary-color);
+  background-color: var(--primary-color, orangered);
   border: none;
   border-radius: 0;
   padding: 1rem 2rem;
@@ -192,7 +191,7 @@ a.nav-link.navbar__link.navbar__link--active {
 }
 
 .card__content--bg {
-  background-color: var(--primary-color);
+  background-color: var(--primary-color, orangered);
 }
 
 .card__image {
@@ -210,14 +209,14 @@ a.nav-link.navbar__link.navbar__link--active {
   font-size: 2rem;
   line-height: 2.8rem;
   letter-spacing: 0.02em;
-  color: #333333;
+  color: #333;
 }
 
 .card__header--strong {
   font-weight: 600;
   font-size: 2.4rem;
   line-height: 3.3rem;
-  color: #333333;
+  color: #333;
   text-align: center;
 }
 
@@ -267,11 +266,11 @@ a.card__button {
   font-weight: 600;
   font-size: 2.4rem;
   line-height: 3.3rem;
-  color: var(--primary-color);
+  color: var(--primary-color, orangered);
 }
 
 .article__title--white {
-  color: #ffffff;
+  color: #fff;
 }
 
 .article__content-1 {
@@ -295,7 +294,7 @@ a.card__button {
   font-weight: 600;
   font-size: 2rem;
   line-height: 2.7rem;
-  color: var(--primary-color);
+  color: var(--primary-color, orangered);
   text-transform: uppercase;
 }
 
@@ -313,9 +312,9 @@ a.card__button {
   padding: 2.3rem;
   border-radius: 0;
   width: 100%;
-  background-color: var(--primary-color);
+  background-color: var(--primary-color, orangered);
   color: #fff;
-  border: 0.1rem solid var(--primary-color);
+  border: 0.1rem solid var(--primary-color, orangered);
 }
 
 .article__contact {
@@ -358,7 +357,7 @@ a.card__button {
 }
 
 .about-us__image--shadow {
-  box-shadow: -3rem -5rem 0 var(--primary-color);
+  box-shadow: -3rem -5rem 0 var(--primary-color, orangered);
 }
 
 .achieve {
@@ -471,7 +470,7 @@ a.card__button {
 }
 
 .form-evaluation {
-  background-color: var(--secondary-color);
+  background-color: var(--secondary-color, maroon);
   padding-top: 2rem;
   padding-bottom: 6rem;
 }
@@ -498,7 +497,7 @@ a.card__button {
 
 .form__request-btn {
   padding: 0.5rem 2rem;
-  background-color: var(--primary-color);
+  background-color: var(--primary-color, orangered);
   border: none;
   font-style: normal;
   font-weight: 600;
@@ -521,7 +520,7 @@ a.card__button {
   font-weight: bolder;
   font-size: 1.8rem;
   line-height: 2.5rem;
-  color: var(--primary-color);
+  color: var(--primary-color, orangered);
   margin-top: 4rem;
 }
 
@@ -534,7 +533,7 @@ a.card__button {
 }
 
 .team-info__image--shadow {
-  box-shadow: -3rem -4rem 0 var(--primary-color);
+  box-shadow: -3rem -4rem 0 var(--primary-color, orange);
 }
 
 .reviews {
@@ -578,15 +577,15 @@ li.reviews__indicator-list {
   border-radius: 100%;
   height: 1.5rem;
   width: 1.5rem;
-  background-color: var(--secondary-color);
+  background-color: var(--secondary-color, maroon);
 }
 
 li.reviews__indicator-list.active {
-  background-color: var(--primary-color);
+  background-color: var(--primary-color, orangered);
 }
 
 .footer-nav {
-  background-color: var(--light-color);
+  background-color: var(--light-color, orangered);
 }
 
 .footer-nav__content {
@@ -630,7 +629,7 @@ a.footer-nav__link:hover {
 }
 
 .footer-nav__sub-footer {
-  background-color: var(--secondary-color);
+  background-color: var(--secondary-color, maroon);
   height: 6rem;
   padding-top: 2rem;
 }
@@ -718,7 +717,7 @@ a.footer-nav__link:hover {
     width: 100%;
   }
 
-  .footer-nav__content>div {
+  .footer-nav__content > div {
     width: 50%;
   }
 }
