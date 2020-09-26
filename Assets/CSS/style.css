@@ -129,24 +129,24 @@ a.nav-link.navbar__link.navbar__link--active {
 .hero__title {
   font-style: normal;
   font-weight: 600;
-  font-size: calc(62.5% + 1.73vw);
-  line-height: calc(100% + 1.68vw);
+  font-size: calc(1rem + 1.73vw);
+  line-height: calc(1.6rem + 1.68vw);
   color: #fff;
 }
 
 .hero__text {
   font-style: normal;
   font-weight: normal;
-  font-size: calc(62.5% + 0.92vw);
-  line-height: calc(100% + 0.87vw);
+  font-size: calc(1rem + 0.92vw);
+  line-height: calc(1.6rem + 0.87vw);
   color: #fff;
 }
 
 .hero__btn {
   font-style: normal;
   font-weight: 600;
-  font-size: calc(62.5% + 0.61vw);
-  line-height: calc(100% + 0.46vw);
+  font-size: calc(1rem + 0.61vw);
+  line-height: calc(1.6rem + 0.46vw);
   color: #fff;
   background-color: var(--primary-color);
   border: none;
@@ -196,7 +196,7 @@ a.nav-link.navbar__link.navbar__link--active {
 }
 
 .card__image {
-  width: 30%;
+  max-width: 30%;
   display: block;
   margin: 1rem auto;
 }
@@ -287,7 +287,7 @@ a.card__button {
   display: flex;
   justify-content: space-between;
   margin: 7rem auto;
-  width: 90%;
+  width: 88%;
 }
 
 .article__sub-title {
@@ -319,7 +319,7 @@ a.card__button {
 }
 
 .article__contact {
-  width: 43%;
+  width: 44%;
 }
 
 .article__list {
@@ -367,12 +367,16 @@ a.card__button {
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 100%;
-  height: 100%;
+  min-height: 100%;
   margin-top: 7rem;
 }
 
 .achieve__info {
+  display: flex;
+  justify-content: space-between;
   padding: 14rem 0;
+  width: 90%;
+  margin: auto;
 }
 
 .achieve__content {
@@ -425,7 +429,7 @@ a.card__button {
   background-size: cover;
   background-repeat: no-repeat;
   max-width: 100%;
-  height: 100%;
+  min-height: 100%;
 }
 
 .activity__content {
@@ -458,7 +462,7 @@ a.card__button {
 }
 
 .activity__image {
-  width: 30%;
+  max-width: 30%;
 }
 
 .services {
@@ -543,7 +547,7 @@ a.card__button {
   background-size: cover;
   background-repeat: no-repeat;
   max-width: 100%;
-  height: 100%;
+  min-height: 100%;
   padding: 12rem 0;
 }
 
@@ -556,8 +560,8 @@ a.card__button {
   padding-bottom: 7rem;
 }
 
-.reviews__image {
-  width: 10%;
+.reviews__user {
+  width: 40%;
   margin-right: 8rem;
 }
 
@@ -636,6 +640,11 @@ a.footer-nav__link:hover {
   text-align: center;
 }
 
+.footer-nav__google-map {
+  width: 50rem;
+  box-shadow: 0 5px 5px #333;
+}
+
 /* RESPONSIVENESS */
 
 @media (max-width: 1024px) {
@@ -657,23 +666,23 @@ a.footer-nav__link:hover {
   }
 
   .achieve__info {
-    padding: 70px 0 70px 40px;
+    padding: 7rem 0 7rem 4rem;
   }
 
   .achieve__content {
-    margin-right: 20px;
+    margin-right: 2rem;
   }
 
   .practice {
-    margin: 40px auto;
+    margin: 4rem auto;
   }
 
   .activity__content {
-    padding-top: 55px;
+    padding-top: 5.5rem;
   }
 
   .activity__image {
-    margin: 10px 0;
+    margin: 1rem 0;
   }
 
   .services {
@@ -685,27 +694,28 @@ a.footer-nav__link:hover {
   }
 
   .team-info {
-    margin: 50px auto;
+    margin: 5rem auto;
   }
 
   .team-info__image {
-    margin-top: 20px;
+    margin-top: 2rem;
   }
 
   .reviews {
-    margin: 50px 0;
+    margin: 5rem 0;
   }
 
   .reviews__slider-content {
-    padding-bottom: 50px;
+    padding-bottom: 5rem;
   }
 
   .reviews__content {
-    padding: 35px 0;
+    padding: 3.5rem 0;
   }
 
-  .reviews__image {
-    width: 20%;
+  .reviews__user {
+    margin-top: 2rem;
+    width: 100%;
   }
 
   .footer-nav__content>div {
@@ -744,31 +754,29 @@ a.footer-nav__link:hover {
   }
 
   .achieve__info {
-    padding: 4rem 0 4rem 4rem;
+    display: block;
+    padding: 4rem 0 4rem;
   }
 
   .achieve__content {
-    margin-right: 1rem;
-  }
-
-  .achieve__image {
-    width: 65%;
+    margin: 4rem 0 0 0;
   }
 
   .practice {
-    margin: 2rem auto;
+    margin: 8rem auto;
   }
 
   .activity {
-    height: 23vh;
+    min-height: 100%;
   }
 
   .activity__content {
-    padding-top: 0.5rem;
+    display: block;
+    padding: 2rem 0;
   }
 
-  .activity__text {
-    text-align: justify;
+  .activity__info {
+    margin-top: 3rem;
   }
 
   .services {
@@ -792,8 +800,16 @@ a.footer-nav__link:hover {
   }
 
   .reviews__content {
-    height: 24vh;
-    padding: 5rem 0;
+    padding: 2rem 0;
+  }
+
+  .reviews__user {
+    margin: 0;
+  }
+
+  .footer-nav__google-map {
+    max-width: 100%;
+    box-shadow: 0 5px 5px #333;
   }
 }
 
@@ -803,8 +819,7 @@ a.footer-nav__link:hover {
   }
 
   .achieve {
-    background-image: linear-gradient(var(--transparent-color),
-        var(--transparent-color));
+    background-image: linear-gradient(var(--transparent-color), var(--transparent-color));
   }
 
   .achieve__image {
@@ -812,22 +827,16 @@ a.footer-nav__link:hover {
   }
 
   .activity {
-    background-image: linear-gradient(var(--transparent-color),
-        var(--transparent-color));
+    background-image: linear-gradient(var(--transparent-color), var(--transparent-color));
     height: 100%;
-  }
-
-  .activity__content {
-    display: block;
-    padding: 10px 0;
-  }
-
-  .activity__text {
-    text-align: center;
   }
 
   .activity__image {
     width: 17%;
+  }
+
+  .team-info__image--shadow {
+    box-shadow: none;
   }
 
   .article__content-1 {
@@ -859,48 +868,22 @@ a.footer-nav__link:hover {
 }
 
 @media (max-width: 480px) {
-  .header__content-1 {
-    margin: 1rem 0 1rem 1.5rem;
-  }
-
-  .header__content-2 {
-    margin: 1rem 1.5rem 1rem 0;
-  }
-
-  .header__icon {
-    width: 15%;
-  }
-
-  .header__text {
-    font-size: 10px;
-    line-height: 14px;
-  }
-
-  .hero__btn {
-    line-height: 20px;
-    padding: 5px 10px;
-  }
-
   .bgd-info {
     display: block;
     width: 80%;
-    margin: 30px auto;
+    margin: 3rem auto;
   }
 
   .card {
-    margin-right: 0px;
+    margin-right: 0;
   }
 
   .card--mid-card {
-    padding: 20px 0px;
+    padding: 2rem 0;
   }
 
   .card__content {
-    padding: 40px 15px;
-  }
-
-  .card__image {
-    width: 20%;
+    padding: 4rem 1.5rem;
   }
 
   .horizontal-line--margin {
@@ -908,31 +891,20 @@ a.footer-nav__link:hover {
   }
 
   .article__title {
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
   }
 
   .about-us__image--shadow {
     box-shadow: none;
   }
 
-  .achieve {
-    background-image: linear-gradient(var(--transparent-color),
-        var(--transparent-color));
-    max-width: 100%;
-    height: 100%;
-  }
-
-  .achieve__info {
-    padding: 10px 0 0 5px;
-  }
-
-  .achieve__content {
-    margin: 1px 0;
+  .achieve__content:first-child {
+    margin: 0;
   }
 
   .achieve__title {
-    margin: 3px 0;
+    margin: 0.3rem 0;
   }
 
   .achieve__image {
@@ -940,7 +912,7 @@ a.footer-nav__link:hover {
   }
 
   .practice {
-    margin: 50px auto;
+    margin: 5rem auto;
   }
 
   .services {
@@ -952,47 +924,36 @@ a.footer-nav__link:hover {
   }
 
   .team-info {
-    margin: 30px auto;
+    margin: 3rem auto;
   }
 
   .team-info__content {
-    margin-top: 20px;
-  }
-
-  .team-info__image--shadow {
-    box-shadow: none;
+    margin-top: 2rem;
   }
 
   .reviews {
-    margin: 30px 0;
-  }
-
-  .reviews__content {
-    background-image: linear-gradient(var(--transparent-color),
-        var(--transparent-color));
-    height: 100%;
-    padding: 10px 0;
+    margin: 3rem 0;
   }
 
   .reviews__slider-content {
-    padding-bottom: 35px;
+    padding-bottom: 3.5rem;
   }
 
   .reviews__title {
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
   }
 
   .reviews__text {
-    font-size: 16px;
-    line-height: 20px;
-    margin-top: 10px;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    margin-top: 1rem;
   }
 
   .reviews__image {
     width: 20%;
-    margin-top: 10px;
-    margin-right: 20px;
+    margin-top: 1rem;
+    margin-right: 2rem;
   }
 }
 
