@@ -448,7 +448,7 @@ a.card__button {
   font-weight: bold;
   font-size: 2rem;
   line-height: 2.7rem;
-  color: #ffffff;
+  color: #fff;
 }
 
 .activity__text {
@@ -457,7 +457,7 @@ a.card__button {
   font-size: 1.8rem;
   line-height: 2.8rem;
   letter-spacing: 0.02em;
-  color: #ffffff;
+  color: #fff;
 }
 
 .activity__image {
@@ -861,7 +861,7 @@ a.footer-nav__link:hover {
     display: block;
   }
 
-  .footer-nav__content>div {
+  .footer-nav__content > div {
     width: 100%;
   }
 }
