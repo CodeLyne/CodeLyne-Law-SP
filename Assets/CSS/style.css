@@ -774,7 +774,7 @@ a.footer-nav__link:hover {
   .header__content-1 {
     margin: 1rem 0 1rem 11.5rem;
   }
-  
+
   .header__content-2 {
     margin: 1rem 12rem 1rem 0;
   }
@@ -809,8 +809,7 @@ a.footer-nav__link:hover {
     grid-template-areas:
       "article__header--grid"
       "about-us__img"
-      "about-us__text-wrapper"
-    ;
+      "about-us__text-wrapper";
     grid-row-gap: 3rem;
   }
 
