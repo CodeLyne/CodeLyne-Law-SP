@@ -73,13 +73,12 @@ body {
 }
 
 .header__content-1 {
-  margin: 1rem auto;
+  margin: 1rem 0 1rem 19rem;
   max-width: 50%;
 }
 
 .header__content-2 {
-  max-width: 74%;
-  margin: 1rem 0;
+  margin: 1rem 19rem 1rem 0;
   text-align: end;
 }
 
@@ -704,7 +703,7 @@ a.footer-nav__link:hover {
   }
 
   .header__content-2 {
-    max-width: 92%;
+    margin: 1rem 3.5rem 1rem 0;
   }
 
   .hero__bg-image {
@@ -777,6 +776,15 @@ a.footer-nav__link:hover {
   }
 }
 
+@media (min-width: 769px) and (max-width: 988px){
+  .header__content-1 {
+    margin: 1rem 0 1rem 11.5rem;
+  }
+  .header__content-2 {
+    margin: 1rem 12rem 1rem 0;
+  }
+}
+
 @media (max-width: 768px) {
   .header__content-1 {
     margin: 1rem 0 1rem 2rem;
@@ -796,7 +804,7 @@ a.footer-nav__link:hover {
     margin: 10rem auto;
   }
 
-  .bgd-info>div {
+  .bgd-info > div {
     margin-right: 0;
   }
 
