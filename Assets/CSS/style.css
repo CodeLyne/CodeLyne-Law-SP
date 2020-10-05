@@ -173,11 +173,11 @@ a.hero__btn {
   text-align: center;
 }
 
-.bgd-info>div {
+.bgd-info > div {
   margin-right: 3rem;
 }
 
-.bgd-info>div:last-child {
+.bgd-info > div:last-child {
   margin-right: 0;
 }
 
@@ -378,8 +378,7 @@ a.card__button {
   grid-auto-rows: repeat(2, 1fr);
   grid-template-areas:
     "about-us__img about-us__img article__header--grid article__header--grid"
-    "about-us__img about-us__img about-us__text-wrapper about-us__text-wrapper"
-  ;
+    "about-us__img about-us__img about-us__text-wrapper about-us__text-wrapper";
   grid-gap: 1.5rem;
 }
 
@@ -566,7 +565,7 @@ a.card__button {
 
 .team-info__content {
   margin-top: 8rem;
-  overflow-X: hidden; 
+  overflow-x: hidden; 
 }
 
 .team-info__sub-title {
@@ -725,21 +724,16 @@ a.footer-nav__link:hover {
     grid-auto-rows: repeat(2, 1fr);
     grid-template-areas:
       "article__header--grid article__header--grid"
-      "about-us__img about-us__text-wrapper"
-    ;
+      "about-us__img about-us__text-wrapper";
     grid-row-gap: 6rem;
   }
 
   .about-us__img {
-    align-content: center;
+    justify-self: center;
   }
 
   .article__header--grid {
     text-align: center;
-  }
-
-  .about-us__img {
-    justify-self: center;
   }
 
   .achieve__content {
@@ -776,7 +770,7 @@ a.footer-nav__link:hover {
   }
 }
 
-@media (min-width: 769px) and (max-width: 988px){
+@media (min-width: 769px) and (max-width: 988px) {
   .header__content-1 {
     margin: 1rem 0 1rem 11.5rem;
   }
@@ -809,7 +803,7 @@ a.footer-nav__link:hover {
   }
 
   .about-us__container {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(1, 1fr);
     grid-auto-rows: repeat(3, 1fr);
     grid-template-areas:
       "article__header--grid"
