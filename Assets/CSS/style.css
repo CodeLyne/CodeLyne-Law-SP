@@ -187,7 +187,7 @@ a.hero__btn {
 }
 
 .card--mid-card {
-  padding: 8rem 2rem 3rem 2rem;
+  padding: 8rem 3.5rem 3rem 3.5rem;
 }
 
 .card--bottom-card {
@@ -203,7 +203,7 @@ a.hero__btn {
 }
 
 .card__content--pad {
-  padding: 1rem 3rem;
+  padding: 1rem 2.5rem;
 }
 
 .card__content--bg {
@@ -786,14 +786,6 @@ a.footer-nav__link:hover {
 }
 
 @media (max-width: 768px) {
-  .header__content-1 {
-    margin: 1rem 0 1rem 2rem;
-  }
-
-  .header__content-2 {
-    margin: 1rem 2.5rem 1rem 0;
-  }
-
   .horizontal-line--margin {
     margin: 0;
   }
