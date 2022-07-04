@@ -497,40 +497,28 @@
                     <span class="horizontal-line"></span>
                 </div>
                 <div class="article__content-1">
-                    <div class="card card--bottom-card mb-5 mb-md-0" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-quad">
-                        <img src="Assets/Images/Rectangle 103.png" alt="" class="img-fluid card__photo">
-                        <div class="card-body card__content card__content--bg">
-                            <h4 class="card-title card__header card__header--white"> Reinstatement of the Chief Justice</h4>
-                            <p class="card-text card__text card__text--white">
-                                Lorem ipsum dolor sit amet, consecteur adipiscing elit lacus 
-                                sit solliciude cusure aliquet sit amet elitert lorem ipsum dolor 
-                                sit amet, consecteur adipiscing elit lacus sit solliciude cusure 
-                                aliquet sit amet<span id="dots1">...</span> <span id="more1">elitert Lorem ipsum dolor sit amet, consecteur 
-                                adipiscing elit lacus sit solliciude cusure aliquet sit amet elitert 
-                                orem ipsum dolor sit amet, consecteur adipiscing elit lacus sit solliciude 
-                                cusure aliquet sit amet elitert Lorem ipsum dolor sit amet, consecteur 
-                                adipiscing elit lacus sit solliciude cusure aliquet sit amet elitert dorem 
-                                ipsum dolor sit amet, consecteur adipiscing elit lacus sit solliciude cusure aliquet sit amet elitert</span> 
-                            </p>
-                            <a onclick="myFunction1()" id="toggleBtn1" class="card__button btn-warning" type="button">Read More</a>
+                    <div>
+                        <div class="card card--bottom-card mb-5 mb-md-0" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-quad">
+                            <img src="Assets/Images/Rectangle 103.png" alt="" class="img-fluid card__photo">
+                            <div class="card-body card__content card__content--bg">
+                                <h4 class="card-title card__header card__header--white"> Reinstatement of the Chief Justice</h4>
+                                <p class="card-text card__text card__text--white">
+                                    Lorem ipsum dolor sit amet, consecteur adipiscing elit lacus sit solliciude cusure aliquet sit amet elitert lorem ipsum dolor sit amet, consecteur adipiscing elit lacus sit solliciude cusure aliquet sit amet<span id="dots">...</span> <span id="more">elitert Lorem ipsum dolor sit amet, consecteur adipiscing elit lacus sit solliciude cusure aliquet sit amet elitert orem ipsum dolor sit amet, consecteur adipiscing elit lacus sit solliciude cusure aliquet sit amet elitert Lorem ipsum dolor sit amet, consecteur adipiscing elit lacus sit solliciude cusure aliquet sit amet elitert dorem ipsum dolor sit amet, consecteur adipiscing elit lacus sit solliciude cusure aliquet sit amet elitert</span> 
+                                </p>
+                                <button class="card__button btn-warning toggle-btn" type="button">Read More</button>
+                            </div>
                         </div>
                     </div>
-                    <div class="card card--bottom-card" data-aos="zoom-in" data-aos-duration="1500" data-aos-easing="ease-in-quad">
-                        <img src="Assets/Images/Rectangle 110.png" alt="" class="img-fluid card__photo">
-                        <div class="card-body card__content card__content--bg">
-                            <h4 class="card-title card__header card__header--white">The Newly Elected Officials of Lawfirm</h4>
-                            <p class="card-text card__text card__text--white">
-                                Lorem ipsum dolor sit amet, consecteur adipiscing elit lacus 
-                                sit solliciude cusure aliquet sit amet elitert lorem ipsum dolor 
-                                sit amet, consecteur adipiscing elit lacus sit solliciude cusure 
-                                aliquet sit amet <span id="dots2">...</span> <span id="more2"> elitert Lorem ipsum dolor sit amet, consecteur 
-                                adipiscing elit lacus sit solliciude cusure aliquet sit amet elitert 
-                                orem ipsum dolor sit amet, consecteur adipiscing elit lacus sit solliciude 
-                                cusure aliquet sit amet elitert Lorem ipsum dolor sit amet, consecteur 
-                                adipiscing elit lacus sit solliciude cusure aliquet sit amet elitert dorem 
-                                ipsum dolor sit amet, consecteur adipiscing elit lacus sit solliciude cusure aliquet sit amet elitert</span>
-                            </p>
-                            <a onclick="myFunction2()" id="toggleBtn2" class="card__button btn-warning" type="button">Read More</a>
+                    <div>
+                        <div class="card card--bottom-card" data-aos="zoom-in" data-aos-duration="1500" data-aos-easing="ease-in-quad">
+                            <img src="Assets/Images/Rectangle 110.png" alt="" class="img-fluid card__photo">
+                            <div class="card-body card__content card__content--bg">
+                                <h4 class="card-title card__header card__header--white">The Newly Elected Officials of Lawfirm</h4>
+                                <p class="card-text card__text card__text--white">
+                                Lorem ipsum dolor sit amet, consecteur adipiscing elit lacus sit solliciude cusure aliquet sit amet elitert lorem ipsum dolor sit amet, consecteur adipiscing elit lacus sit solliciude cusure aliquet sit amet <span id="dots">...</span> <span id="more"> elitert Lorem ipsum dolor sit amet, consecteur adipiscing elit lacus sit solliciude cusure aliquet sit amet elitert orem ipsum dolor sit amet, consecteur adipiscing elit lacus sit solliciude cusure aliquet sit amet elitert Lorem ipsum dolor sit amet, consecteur adipiscing elit lacus sit solliciude cusure aliquet sit amet elitert dorem ipsum dolor sit amet, consecteur adipiscing elit lacus sit solliciude cusure aliquet sit amet elitert</span>
+                                </p>
+                                <button class="card__button btn-warning toggle-btn" type="button">Read More</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -687,38 +675,40 @@
 
     <!----------------------------------- Read more Javascript -------------------------------->
     <script>
-        function myFunction1() {
-          var dots1 = document.getElementById("dots1");
-          var moreText1 = document.getElementById("more1");
-          var btnText1 = document.getElementById("toggleBtn1");
-        
-          if (dots1.style.display === "none") {
-            dots1.style.display = "inline";
-            btnText1.innerHTML = "Read more"; 
-            moreText1.style.display = "none";
-          } else {
-            dots1.style.display = "none";
-            btnText1.innerHTML = "Read less"; 
-            moreText1.style.display = "inline";
-          }
-        }
-    </script>
-            
-    <script>
-        function myFunction2() {
-          var dots2 = document.getElementById("dots2");
-          var moreText2 = document.getElementById("more2");
-          var btnText2 = document.getElementById("toggleBtn2");
+        let cardBtns = document.querySelectorAll(".toggle-btn");
+        cardBtns = [...cardBtns];
 
-          if (dots2.style.display === "none") {
-            dots2.style.display = "inline";
-            btnText2.innerHTML = "Read more"; 
-            moreText2.style.display = "none";
-          } else {
-            dots2.style.display = "none";
-            btnText2.innerHTML = "Read less"; 
-            moreText2.style.display = "inline";
-          }
+        cardBtns.forEach(readMorebtn => {
+            const dot = readMorebtn.previousElementSibling.children[0];
+            const text = readMorebtn.previousElementSibling.children[1];
+            dot.style.display = 'inline';
+            text.style.display = 'none';
+
+            readMorebtn.addEventListener('click', toggleFunction)
+        })
+
+        function toggleFunction(e) {
+            const dot = e.target.previousElementSibling.children[0];
+            const text = e.target.previousElementSibling.children[1];
+
+            if(dot.style.display === 'none') {
+                dot.style.display = 'inline';
+                text.style.display = 'none';
+                e.target.textContent = 'Read more';
+            } else {
+                dot.style.display = 'none';
+                text.style.display = 'inline'
+                e.target.textContent = 'Read less'
+            }
+          //if (dots1.style.display === "none") {
+          //  dots1.style.display = "inline";
+          //  btnText1.innerHTML = "Read more"; 
+          //  moreText1.style.display = "none";
+          //} else {
+          //  dots1.style.display = "none";
+          //  btnText1.innerHTML = "Read less"; 
+          //  moreText1.style.display = "inline";
+          //}
         }
     </script>
 
