@@ -157,7 +157,8 @@ a.nav-link.navbar__link.navbar__link--active {
   background-color: var(--primary-color, orangered);
   border: none;
   border-radius: 0;
-  padding: 0.2rem 2rem;
+  padding: 1rem 2rem;
+  display: inline-block;
 }
 
 a.hero__btn {
@@ -191,7 +192,6 @@ a.hero__btn {
 }
 
 .card--bottom-card {
-  width: 45%;
   border: none;
   box-shadow: none;
 }
@@ -265,7 +265,7 @@ a.hero__btn {
   color: #fff;
 }
 
-a.card__button {
+button.card__button {
   text-decoration: none;
   padding: 1rem 2rem;
   border: 0.1rem solid #fff;
@@ -309,6 +309,10 @@ a.card__button {
   display: flex;
   justify-content: space-between;
   margin: 5rem 0;
+}
+
+.article__content-1 > div {
+  width: 45%;
 }
 
 .article__content-2 {
@@ -547,7 +551,7 @@ a.card__button {
 }
 
 .form__request-btn {
-  padding: 0.5rem 2rem;
+  padding: 1rem 2rem;
   background-color: var(--primary-color, orangered);
   border: none;
   font-style: normal;
@@ -564,8 +568,7 @@ a.card__button {
 }
 
 .team-info__content {
-  margin-top: 8rem;
-  overflow-x: hidden; 
+  margin-top: 8rem; 
 }
 
 .team-info__sub-title {
@@ -756,6 +759,10 @@ a.footer-nav__link:hover {
     width: 75%;
   }
 
+  .team-info__content {
+    overflow-x: hidden;
+  }
+
   .reviews__slider-content {
     padding-bottom: 5rem;
   }
@@ -833,7 +840,6 @@ a.footer-nav__link:hover {
     margin-top: 4rem;
   }
 
-
   .team-info__image--shadow {
     box-shadow: none;
   }
@@ -851,7 +857,7 @@ a.footer-nav__link:hover {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 765px) {
   .card--bottom-card {
     width: 100%;
   }
@@ -914,8 +920,16 @@ a.footer-nav__link:hover {
     width: 100%;
   }
 
+  .article__content-1 > div {
+    width: 100%;
+  }
+
   .form {
     width: 100%;
+  }
+
+  .footer-nav__connect {
+    justify-self: center;
   }
 }
 
@@ -984,6 +998,10 @@ a.footer-nav__link:hover {
 }
 
 @media (orientation: landscape) {
+  .hero__bg-image {
+    height: 100vh;
+  }
+  
   .practice__image {
     width: 100%;
   }
